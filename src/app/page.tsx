@@ -1,6 +1,7 @@
 import Foto from "@/components/Foto";
 import Social from "@/components/Socials";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
@@ -22,19 +23,13 @@ const Home = () => {
               on web development and mobile development.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/uc?export=download&id=1O1RqmussMwRUWNVJgSnG3hkTWT-Hs0JB"
-                  )
-                }
+              {/* <Link
+                className="uppercase flex items-center gap-2 border border-accent p-3 rounded-lg hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                href="https://drive.google.com/uc?export=download&id=1O1RqmussMwRUWNVJgSnG3hkTWT-Hs0JB"
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
-              </Button>
+              </Link> */}
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyle="flex gap-6"

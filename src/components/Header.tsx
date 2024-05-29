@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
 import Nav from "./Nav";
-import MobileNav from "./MobileNav";
+import { FiDownload } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -15,14 +14,21 @@ const Header = () => {
 
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <Button>Hire Me</Button>
+          </Link> */}
+          <Link
+            className="uppercase flex items-center gap-2 border border-accent p-3 rounded-lg hover:bg-accent hover:text-primary hover:transition-all duration-500"
+            href="https://drive.google.com/uc?export=download&id=1O1RqmussMwRUWNVJgSnG3hkTWT-Hs0JB"
+          >
+            <span>Download CV</span>
+            <FiDownload className="text-xl" />
           </Link>
         </div>
 
-        <div className="xl:hidden">
+        {/* <div className="xl:hidden">
           <MobileNav />
-        </div>
+        </div> */}
       </div>
     </header>
   );

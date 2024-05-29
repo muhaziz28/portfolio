@@ -31,7 +31,7 @@ const Nav = () => {
 
   return (
     <nav className="flex gap-8 capitalize">
-      {links.map((link, index) => {
+      {/* {links.map((link, index) => {
         return (
           <Link
             href={link.path}
@@ -43,7 +43,7 @@ const Nav = () => {
             {link.name}
           </Link>
         );
-      })}
+      })} */}
     </nav>
   );
 };
