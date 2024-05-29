@@ -15,16 +15,22 @@ const Home = () => {
               <span className="text-accent">Muhammad Haikal Aziz</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              blanditiis dolores tempore, quasi magnam reprehenderit corrupti
-              voluptas officiis aperiam minus nemo nulla voluptates deserunt
-              culpa corporis dicta quo veritatis. Totam!
+              I&apos;m software developer since 2019, especially in web and
+              mobile development. Currently, I&apos;m working as a full-time
+              software developer at Consultan Company that focus web
+              development. <br /> I&apos;m also a freelance developer that focus
+              on web development and mobile development.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/uc?export=download&id=1O1RqmussMwRUWNVJgSnG3hkTWT-Hs0JB"
+                  )
+                }
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
